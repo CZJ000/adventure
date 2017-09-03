@@ -1,7 +1,7 @@
 message.unity3d|9878ee3571dc812cdc26f750a64b8428
-message.unity3d.manifest|5c871c471d982f401a3d74d25b8a7a29
+message.unity3d.manifest|3b0a4f136fe25f8a6f84825d220b7b07
 prompt.unity3d|63156221ec72e2ad6943b99297b9edaf
-prompt.unity3d.manifest|ad5f7e0b71b8ed54525f02e2402d2345
+prompt.unity3d.manifest|cbe54ceece4d8e2f2b6dfaf8da7309fd
 prompt_asset.unity3d|8b7c7cd2b779bc7955c2773f0752070b
 prompt_asset.unity3d.manifest|68813be6874873f442c6c7b631092e4b
 shared_asset.unity3d|10274663b690f8f176ef7a091093c282
@@ -16,7 +16,7 @@ lua/eventlib.lua|5b6f6d67f568ad41f97c619d533b89d0
 lua/events.lua|94bd71b0a7df7b2193efa5a1bdf4bc37
 lua/list.lua|3e5dbbec884ee85c353ccd9f93439c1d
 lua/ltn12.lua|5f0d3400869c871e35cda3ff7551209a
-lua/Main.lua|faf99a2f3fc5556a01b2dab7c2167500
+lua/Main.lua|7df26044ab094aab7d1b42a6b01b125b
 lua/mime.lua|2e001d487613c4ae82f79ac23b8c978f
 lua/slot.lua|67f502892ab09833c6f810ea2a1a48d2
 lua/socket.lua|f62021b8c3d4b62d419fdb2054c86e31
@@ -67,12 +67,12 @@ lua/3rd/sproto/test.lua|95883de988a26f5491196cba1153b9ef
 lua/3rd/sproto/testall.lua|2103f47e4c0c66c813213f51dfbf406b
 lua/3rd/sproto/testrpc.lua|62e1d66bbdf0abb43f8c14f9be9f007b
 lua/cjson/util.lua|d9187071b6c2cae70ac95cff4170bf36
-lua/Common/define.lua|7ab3594192b06399afcff147b942aa21
+lua/Common/define.lua|5512f94660e9b7d2825e86af230f92d9
 lua/Common/functions.lua|ff1ffcc2289a05dccca1387c9b22298c
 lua/Common/protocal.lua|9842a503ab8c2b53be70d0053453337d
-lua/Controller/MessageCtrl.lua|f4103ea3541819cbe42f1891b5fc9e9d
+lua/Controller/MessageCtrl.lua|634824260166573235892f8911ce3d53
 lua/Controller/PromptCtrl.lua|0908fd568b2d8cfe5c16a87c7d612dbd
-lua/Controller/StartCtrl.lua|45a55e134b469520a19f45ae1f1e8d77
+lua/Controller/StartCtrl.lua|4b0fa414a505bef66521b0e31d7984a6
 lua/jit/bc.lua|e3918fefbc2baa65540d0e0c3f75a342
 lua/jit/bcsave.lua|e98b0947377128b3645c85425cf1651a
 lua/jit/dis_arm.lua|aa2ad030235c69f5df3959de0d79d8a0
@@ -99,6 +99,13 @@ lua/misc/functions.lua|557517bc71b9b37d542588161f2b2773
 lua/misc/misc.lua|0579146c4ab6d749e43afd061cd9ee94
 lua/misc/strict.lua|af467d5edd22a627728bbbfb32764bdf
 lua/misc/utf8.lua|e3bfd8b0b66eecbaf006428c6ea8e9d3
+lua/MVC/Common/define.lua|bb61f53c77ae969e2cebe496547566d3
+lua/MVC/Controller/StartUpCommand.lua|7f675eacc02b2213af6bbfae0830a15b
+lua/MVC/Model/GameModel.lua|4b17dc0efa4f4fa060e61826e758038f
+lua/MVC/MVC/Controller.lua|d03fa6e7f14370699ac1d0c1fe9580ce
+lua/MVC/MVC/Model.lua|a0e8f4f5fee0598e164bbe9b4e32ae6a
+lua/MVC/MVC/MVC.lua|9d84f60007dca3fdd1f284f2163e8d0c
+lua/MVC/MVC/View.lua|0d1eb274bd8c90355401f1ff4b009bc5
 lua/protobuf/containers.lua|9b8152afef83759150ca865db4cd37da
 lua/protobuf/decoder.lua|bf96cb127371d1f0467a3bf2955bed03
 lua/protobuf/descriptor.lua|adf618992d81b7d326a32b53950dd736
@@ -134,4 +141,4 @@ lua/UnityEngine/Vector3.lua|56fba4bc750a99682372cfec906de515
 lua/UnityEngine/Vector4.lua|6af81ec2235f63adbdbe24bc0fb6b028
 lua/View/MessagePanel.lua|679535fbbbe3a446d5405f94eb107a1e
 lua/View/PromptPanel.lua|30d22ddda0bb8bfb6600c079351ac475
-lua/View/StartPanel.lua|c63d5f079f6c938e52cbd3dc3d3d41ff
+lua/View/StartPanel.lua|8b38c55f8aa422a55751d9c9f7cc2595

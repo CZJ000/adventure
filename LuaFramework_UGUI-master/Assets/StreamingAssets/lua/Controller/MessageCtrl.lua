@@ -10,6 +10,7 @@ local gameObject;
 --构建函数--
 function MessageCtrl.New()
 	logWarn("MessageCtrl.New--->>");
+	
 	return this;
 end
 
@@ -30,7 +31,7 @@ end
 
 --单击事件--
 function MessageCtrl.OnClick(go)
-
+    
 	destroy(gameObject);
     
 end

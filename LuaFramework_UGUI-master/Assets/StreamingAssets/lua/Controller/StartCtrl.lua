@@ -3,7 +3,7 @@ StartCtrl = {};
 
 local this = StartCtrl;
 
-local message;
+local lua_behaviour;
 local transform;
 local gameObject;
 
@@ -22,20 +22,20 @@ end
 function StartCtrl.OnCreate(obj)
 	gameObject = obj;
 
-	message = gameObject:GetComponent('LuaBehaviour');
-	message:AddClick(MessagePanel.btnClose, this.OnClick);
-
+	lua_behaviour = gameObject:GetComponent('LuaBehaviour');
+	lua_behaviour:AddClick(StartPanel.Q1, this.OnClick);
+     
 	logWarn("Start lua--->>"..gameObject.name);
 end
 
 --单击事件--
 function StartCtrl.OnClick(go)
     
-	destroy(gameObject);
+	
     
 end
 
 --关闭事件--
 function StartCtrl.Close()
-	panelMgr:ClosePanel(CtrlNames.Message);
+	panelMgr:ClosePanel(CtrlNames.StartCtrl);
 end
