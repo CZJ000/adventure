@@ -14,32 +14,32 @@ this.CommandMap={};
 
 function MVC.RegisterModel(model)
 
-	Models[ModelsList.GameModel]=model;
+	this.Models[ModelsList.GameModel]=model;
 end
 
 function MVC.RegisterView(view_name,view)
 	-- body
-	if(Views[view_name]~=nil)
+	if(this.Views[view_name]~=nil)
 	then
-		Views[view_name]=nil;
+		this.Views[view_name]=nil;
 	end
 	view.RegisterEvents();
-	Views[view_name]=view;
+	this.Views[view_name]=view;
 end
 
 function MVC.RegisterController(eventName, controllerType)
 	-- body
-	CommandMap[eventName]=controllerType;
+	this.CommandMap[eventName]=controllerType;
 end
 
 
 function MVC.SendEvent( eventName,data )
 	-- body
-	if(CommandMap[eventName]~=nil)
+	if(this.CommandMap[eventName]~=nil)
 	then
-		CommandMap[eventName].Execute(data);
+		this.CommandMap[eventName].Execute(data);
 	end
-	for _,v in ipairs(Views) do
+	for _,v in ipairs(this.Views) do
 		if(isInArray(v.AttentionEvents,eventName))
 		then
 		    v.HandleEvent(eventName,data);

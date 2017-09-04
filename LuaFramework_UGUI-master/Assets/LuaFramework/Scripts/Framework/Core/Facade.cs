@@ -94,6 +94,11 @@ public class Facade {
         return default(T);
     }
 
+    public static void Log()
+    {
+        Debug.Log("adaads");
+    }
+
     /// <summary>
     /// 获取系统管理器
     /// </summary>

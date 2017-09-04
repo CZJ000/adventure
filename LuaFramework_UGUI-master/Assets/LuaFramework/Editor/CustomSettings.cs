@@ -7,6 +7,7 @@ using LuaFramework;
 using BindType = ToLuaMenu.BindType;
 using UnityEngine.UI;
 using System.Reflection;
+using UnityEngine.SceneManagement;
 
 public static class CustomSettings
 {
@@ -97,6 +98,7 @@ public static class CustomSettings
         _GT(typeof(GameObject)),
         _GT(typeof(TrackedReference)),
         _GT(typeof(Application)),
+        _GT(typeof(SceneManager)),
         _GT(typeof(Physics)),
         _GT(typeof(Collider)),
         _GT(typeof(Time)),        
@@ -159,6 +161,8 @@ public static class CustomSettings
         _GT(typeof(LuaHelper)),
         _GT(typeof(ByteBuffer)),
         _GT(typeof(LuaBehaviour)),
+        _GT(typeof(AppFacade)),
+        _GT(typeof(ManagerName)),
 
         _GT(typeof(GameManager)),
         _GT(typeof(LuaManager)),
@@ -170,7 +174,7 @@ public static class CustomSettings
         _GT(typeof(ResourceManager)),
 
 
-        _GT(typeof(ControllerCommand)),
+        
 
 
 

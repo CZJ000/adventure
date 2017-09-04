@@ -1,11 +1,5 @@
 ModelsList={
-	 "GameModel"
-	
-	
-	
-
-
-
+	 "GameModel"		
 };
 
 ControllerList=
@@ -13,6 +7,9 @@ ControllerList=
 	 StartUpCommand="StartUpCommand"
 
 };
+
+ManagerName=LuaFramework.ManagerName;
+
 
 
 

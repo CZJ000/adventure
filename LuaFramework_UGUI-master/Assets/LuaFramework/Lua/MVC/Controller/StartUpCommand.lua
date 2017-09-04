@@ -1,3 +1,6 @@
+
+require "MVC/Common/define"
+
 StartUpCommand=Controller:new()
 function StartUpCommand:new (o)
   o = o or Controller:new(o)
@@ -8,5 +11,6 @@ end
 
 function StartUpCommand.Execute( data )
 	-- body
-	LuaFramework.Util.Log("helloworld");
+	Util.Log("helloworld");
+  
 end

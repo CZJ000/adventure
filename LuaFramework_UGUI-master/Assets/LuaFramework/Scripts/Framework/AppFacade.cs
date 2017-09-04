@@ -2,7 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using LuaFramework;
 public class AppFacade : Facade
 {
     private static AppFacade _instance;
@@ -32,8 +32,14 @@ public class AppFacade : Facade
     /// 启动框架
     /// </summary>
     public void StartUp() {
-        SendMessageCommand(NotiConst.START_UP);
-        RemoveMultiCommand(NotiConst.START_UP);
+        //SendMessageCommand(NotiConst.START_UP);
+        //RemoveMultiCommand(NotiConst.START_UP);
+        AddManager<LuaManager>(ManagerName.Lua);
+        AppFacade.Instance.AddManager<ResourceManager>(ManagerName.Resource);
+        AppFacade.Instance.AddManager<ThreadManager>(ManagerName.Thread);
+        AppFacade.Instance.AddManager<ObjectPoolManager>(ManagerName.ObjectPool);
+        AppFacade.Instance.AddManager<GameManager>(ManagerName.Game);
+
     }
 }
 

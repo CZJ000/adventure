@@ -43,9 +43,9 @@ namespace LuaFramework {
         }
 
         void StartMain() {
-            lua.DoFile("Main.lua");
+            lua.DoFile("Game.lua");
 
-            LuaFunction main = lua.GetFunction("Main");
+            LuaFunction main = lua.GetFunction("Start");
             main.Call();
             main.Dispose();
             main = null;    

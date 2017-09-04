@@ -11,13 +11,22 @@ namespace LuaFramework {
     public class GameManager : Manager {
         protected static bool initialize = false;
         private List<string> downloadFiles = new List<string>();
-
+        private LuaFunction levelLoadedCallBack;
         /// <summary>
         /// 初始化游戏管理器
         /// </summary>
         void Awake() {
             Init();
         }
+
+
+
+
+
+
+
+
+
 
         /// <summary>
         /// 初始化
@@ -30,13 +39,39 @@ namespace LuaFramework {
             Application.targetFrameRate = AppConst.GameFrameRate;
         }
 
-        ///<summary>
-        ///切换场景
+
+        /// <summary>
+        /// 加载场景
         /// </summary>
-        public void LoadScene(string scene_name)
+        /// <param name="index"></param>
+
+        public void LoadScene(int index,LuaFunction luaFunction)
         {
-            Application.LoadLevel(scene_name);
+
+            levelLoadedCallBack = luaFunction;
+           
+            Application.LoadLevel(index);
+
         }
+
+        /// <summary>
+        /// 完成加载
+        /// </summary>
+        /// <param name="level"></param>
+
+        public void OnLevelWasLoaded(int level)
+        {
+            Debug.Log(level);
+            if (levelLoadedCallBack != null)
+            {
+                levelLoadedCallBack.Call(level);
+              
+            }
+            
+        }
+
+
+
 
         /// <summary>
         /// 释放资源

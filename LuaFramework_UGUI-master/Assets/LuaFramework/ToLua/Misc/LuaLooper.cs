@@ -43,6 +43,8 @@ public class LuaLooper : MonoBehaviour
         private set;
     }
 
+  
+
     public LuaState luaState = null;
 
     void Start() 
@@ -52,6 +54,7 @@ public class LuaLooper : MonoBehaviour
             UpdateEvent = GetEvent("UpdateBeat");
             LateUpdateEvent = GetEvent("LateUpdateBeat");
             FixedUpdateEvent = GetEvent("FixedUpdateBeat");
+           
         }
         catch (Exception e)
         {
@@ -118,6 +121,8 @@ public class LuaLooper : MonoBehaviour
         luaState.LuaPop(1);
     }
 
+
+
     void FixedUpdate()
     {
 #if UNITY_EDITOR
@@ -155,6 +160,9 @@ public class LuaLooper : MonoBehaviour
                 FixedUpdateEvent.Dispose();
                 FixedUpdateEvent = null;
             }
+
+         
+            
 
             luaState = null;
         }
