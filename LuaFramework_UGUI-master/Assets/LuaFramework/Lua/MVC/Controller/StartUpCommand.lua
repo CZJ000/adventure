@@ -1,5 +1,6 @@
 
 require "MVC/Common/define"
+require "MVC/MVC/Controller"
 
 StartUpCommand=Controller:new()
 function StartUpCommand:new (o)

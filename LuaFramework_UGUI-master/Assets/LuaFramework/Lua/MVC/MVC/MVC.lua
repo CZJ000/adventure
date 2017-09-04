@@ -1,6 +1,6 @@
-require "MVC/MVC/Model"
-require "MVC/MVC/View"
-require "MVC/MVC/Controller"
+--require "MVC/MVC/Model"
+--require "MVC/MVC/View"
+--require "MVC/MVC/Controller"
 
 MVC={};
 
