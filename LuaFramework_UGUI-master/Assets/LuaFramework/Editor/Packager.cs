@@ -165,8 +165,8 @@ public class Packager {
 
         AddBuildMap("prompt_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Examples/Textures/Prompt");
         AddBuildMap("shared_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Examples/Textures/Shared");
-        AddBuildMap("start"+AppConst.ExtName,"*.prefab","Assets/MyAssets");
-
+        AddBuildMap("UISelect"+AppConst.ExtName,"*.prefab","Assets/LuaFramework/Resources");
+        AddBuildMap("UISelect_asset" + AppConst.ExtName, "*.png", "Assets/LuaFramework/Resources/Image/angin-con1");
     }
 
     /// <summary>

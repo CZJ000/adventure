@@ -61,7 +61,7 @@ namespace LuaFramework {
 
         public void OnLevelWasLoaded(int level)
         {
-            Debug.Log(level);
+
             if (levelLoadedCallBack != null)
             {
                 levelLoadedCallBack.Call(level);

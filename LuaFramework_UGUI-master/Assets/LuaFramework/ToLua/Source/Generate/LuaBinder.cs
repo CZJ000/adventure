@@ -11,6 +11,7 @@ public static class LuaBinder
 		L.BeginModule(null);
 		LuaInterface_DebuggerWrap.Register(L);
 		AppFacadeWrap.Register(L);
+		UIEventWrap.Register(L);
 		ViewWrap.Register(L);
 		BaseWrap.Register(L);
 		FacadeWrap.Register(L);

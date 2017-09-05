@@ -163,6 +163,10 @@ public static class CustomSettings
         _GT(typeof(LuaBehaviour)),
         _GT(typeof(AppFacade)),
         _GT(typeof(ManagerName)),
+        _GT(typeof(UIEvent)),
+
+
+
 
         _GT(typeof(GameManager)),
         _GT(typeof(LuaManager)),
@@ -194,7 +198,7 @@ public static class CustomSettings
         typeof(SphereCollider),
         typeof(CharacterController),
         typeof(CapsuleCollider),
-
+        
         typeof(Animation),
         typeof(AnimationClip),
         typeof(AnimationState),

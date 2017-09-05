@@ -18,9 +18,12 @@ namespace LuaFramework {
         private static List<string> luaPaths = new List<string>();
 
         public static int Int(object o) {
+            
             return Convert.ToInt32(o);
+            
+            
         }
-
+        
         public static float Float(object o) {
             return (float)Math.Round(Convert.ToSingle(o), 2);
         }
@@ -43,8 +46,12 @@ namespace LuaFramework {
         }
 
         public static long GetTime() {
+           
+           
+
             TimeSpan ts = new TimeSpan(DateTime.UtcNow.Ticks - new DateTime(1970, 1, 1, 0, 0, 0).Ticks);
             return (long)ts.TotalMilliseconds;
+         
         }
 
         /// <summary>
@@ -57,7 +64,7 @@ namespace LuaFramework {
             }
             return null;
         }
-
+        
         /// <summary>
         /// 搜索子物体组件-Transform版
         /// </summary>
@@ -66,7 +73,9 @@ namespace LuaFramework {
                 Transform sub = go.Find(subnode);
                 if (sub != null) return sub.GetComponent<T>();
             }
+            
             return null;
+            
         }
 
         /// <summary>

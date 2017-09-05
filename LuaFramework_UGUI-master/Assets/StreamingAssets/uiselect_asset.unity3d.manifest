@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 1224046573
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bba140b33e91cf8a14c7efd854e53fbc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 36c33a819640bead83b84b1645a12e6d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/LuaFramework/Resources/Image/angin-con1/again-1.png
+- Assets/LuaFramework/Resources/Image/angin-con1/again-5.png
+- "Assets/LuaFramework/Resources/Image/angin-con1/again-\u96BE\u5EA6.png"
+- Assets/LuaFramework/Resources/Image/angin-con1/again-3.png
+- Assets/LuaFramework/Resources/Image/angin-con1/again-bg.png
+- Assets/LuaFramework/Resources/Image/angin-con1/again-2.png
+- Assets/LuaFramework/Resources/Image/angin-con1/again-4.png
+Dependencies: []

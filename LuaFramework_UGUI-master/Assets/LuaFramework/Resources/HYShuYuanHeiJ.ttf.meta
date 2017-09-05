@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f63574789a1785a4f8b9e2ccb07a2a1e
+timeCreated: 1504592781
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: HYShuYuanHeiJ
+  fontNames:
+  - HYShuYuanHeiJ
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
